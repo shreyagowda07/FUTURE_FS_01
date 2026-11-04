@@ -1,5 +1,19 @@
+```css
+/* =================================
+   1. GLOBAL STYLES
+================================= */
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+:root {
+    --background: #080d1b;
+    --card-background: #111a2e;
+    --primary: #00d9ff;
+    --secondary: #8b5cf6;
+    --text: #f5f7ff;
+    --muted: #a4aec2;
+    --border: rgba(255, 255, 255, 0.09);
+}
 
 * {
     margin: 0;
@@ -9,222 +23,219 @@
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
-    background: #080b16;
-    color: #ffffff;
+    font-family: 'Inter', sans-serif;
+    background: var(--background);
+    color: var(--text);
     line-height: 1.7;
+    overflow-x: hidden;
 }
 
-header {
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+section {
+    scroll-margin-top: 90px;
+}
+
+span {
+    color: var(--primary);
+}
+
+/* =================================
+   2. NAVIGATION
+================================= */
+
+.header {
     width: 100%;
     padding: 20px 8%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: rgba(8, 11, 22, 0.95);
     position: sticky;
     top: 0;
-    z-index: 100;
-    border-bottom: 1px solid #202942;
+    z-index: 1000;
+    background: rgba(8, 13, 27, 0.94);
+    backdrop-filter: blur(15px);
+    border-bottom: 1px solid var(--border);
 }
 
-header h1 {
-    font-size: 24px;
-    color: #61dafb;
+.logo {
+    font-size: 28px;
+    font-weight: 800;
+    letter-spacing: -1px;
 }
 
-nav {
+.navbar {
     display: flex;
-    gap: 28px;
+    gap: 30px;
 }
 
-nav a {
-    color: #ffffff;
-    text-decoration: none;
+.navbar a {
+    color: var(--muted);
     font-size: 14px;
+    font-weight: 600;
     transition: 0.3s;
 }
 
-nav a:hover {
-    color: #61dafb;
+.navbar a:hover,
+.navbar a.active {
+    color: var(--primary);
 }
 
-section {
+/* =================================
+   3. HOME SECTION
+================================= */
+
+.home {
+    min-height: 90vh;
     padding: 100px 10%;
-}
-
-#home {
-    min-height: 85vh;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    background: radial-gradient(circle at 80% 40%, #142c50, #080b16 55%);
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+    background:
+        radial-gradient(
+            circle at 80% 30%,
+            rgba(0, 217, 255, 0.12),
+            transparent 35%
+        );
 }
 
-#home h2 {
-    font-size: clamp(38px, 6vw, 65px);
+.home-content {
+    max-width: 650px;
+}
+
+.intro {
+    color: var(--primary);
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    margin-bottom: 22px;
+}
+
+.home-content h1 {
+    font-size: clamp(40px, 5vw, 65px);
     font-weight: 800;
-    margin-bottom: 10px;
-}
-
-#home h3 {
-    font-size: 25px;
-    color: #61dafb;
+    line-height: 1.2;
     margin-bottom: 20px;
 }
 
-#home p {
-    max-width: 650px;
-    color: #b7c2d8;
-    margin-bottom: 30px;
-}
-
-.contact-button {
-    display: inline-block;
-    padding: 13px 30px;
-    background: #61dafb;
-    color: #080b16;
-    text-decoration: none;
+.home-content h2 {
+    color: #c5cce0;
+    font-size: 23px;
     font-weight: 600;
-    border-radius: 30px;
-    transition: 0.3s;
+    margin-bottom: 22px;
 }
 
-.contact-button:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 0 25px #61dafb;
-}
-
-section h2 {
-    font-size: 36px;
-    margin-bottom: 25px;
-    color: #61dafb;
-}
-
-#about p {
-    max-width: 850px;
-    color: #bdc7d9;
+.description {
+    max-width: 580px;
+    color: var(--muted);
     font-size: 16px;
+    margin-bottom: 32px;
 }
 
-#skills {
-    background: #0d1324;
+.home-buttons {
+    display: flex;
+    gap: 18px;
+    flex-wrap: wrap;
 }
 
-.skills-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+/* =================================
+   4. BUTTONS
+================================= */
+
+.btn {
+    display: inline-block;
+    padding: 13px 25px;
+    background: var(--primary);
+    color: #07111d;
+    border: 1px solid var(--primary);
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 700;
+    transition: 0.3s;
 }
 
-.skill {
-    padding: 25px;
+.btn:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 25px rgba(0, 217, 255, 0.25);
+}
+
+.btn-outline {
+    background: transparent;
+    color: var(--primary);
+}
+
+.btn-outline:hover {
+    background: var(--primary);
+    color: #07111d;
+}
+
+/* =================================
+   5. PROFILE CARD
+================================= */
+
+.home-card {
+    width: 320px;
+    min-width: 280px;
+    padding: 40px 25px;
     text-align: center;
-    background: #151f35;
-    border: 1px solid #263957;
-    border-radius: 12px;
-    transition: 0.3s;
+    background: linear-gradient(145deg, #17233c, #10182b);
+    border: 1px solid rgba(0, 217, 255, 0.2);
+    border-radius: 22px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    transition: 0.4s;
 }
 
-.skill:hover {
-    transform: translateY(-7px);
-    border-color: #61dafb;
-    box-shadow: 0 5px 25px #61dafb20;
-}
-
-.projects-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 25px;
-}
-
-.project-card {
-    background: #111a2d;
-    border: 1px solid #263957;
-    padding: 30px;
-    border-radius: 15px;
-    transition: 0.3s;
-}
-
-.project-card:hover {
+.home-card:hover {
     transform: translateY(-10px);
-    border-color: #61dafb;
-    box-shadow: 0 10px 30px #61dafb20;
+    border-color: var(--primary);
 }
 
-.project-card h3 {
-    color: #61dafb;
-    margin-bottom: 15px;
+.profile-circle {
+    width: 125px;
+    height: 125px;
+    margin: 0 auto 25px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    color: #08111f;
+    font-size: 40px;
+    font-weight: 800;
+    box-shadow: 0 0 35px rgba(0, 217, 255, 0.25);
 }
 
-.project-card p {
-    color: #b7c2d8;
+.home-card h2 {
+    font-size: 23px;
+    margin-bottom: 5px;
+}
+
+.home-card p {
+    color: var(--muted);
     font-size: 14px;
 }
 
-#contact {
-    background: #0d1324;
-    text-align: center;
+.profile-line {
+    width: 50px;
+    height: 3px;
+    margin: 22px auto;
+    background: var(--primary);
+    border-radius: 5px;
 }
 
-#contact p {
-    color: #bdc7d9;
-    margin-bottom: 25px;
+.home-card .profile-note {
+    color: var(--primary);
+    letter-spacing: 1px;
 }
 
-.contact-links {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 20px;
-}
+/* =================================
+   6. GENERAL SECTIONS
+================================= */
 
-.contact-links a {
-    padding: 12px 25px;
-    border: 1px solid #61dafb;
-    color: #61dafb;
-    text-decoration: none;
-    border-radius: 30px;
-    transition: 0.3s;
-}
-
-.contact-links a:hover {
-    background: #61dafb;
-    color: #080b16;
-}
-
-footer {
-    padding: 25px;
-    text-align: center;
-    background: #080b16;
-    color: #8492a8;
-    border-top: 1px solid #202942;
-    font-size: 13px;
-}
-
-@media (max-width: 768px) {
-    header {
-        flex-direction: column;
-        gap: 15px;
-    }
-
-    nav {
-        gap: 12px;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    section {
-        padding: 70px 7%;
-    }
-
-    .skills-container,
-    .projects-container {
-        grid-template-columns: 1fr;
-    }
-
-    #home h3 {
-        font-size: 20px;
-    }
-}
+.section {
+    padding: 100px 10%;
+    text
