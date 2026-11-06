@@ -239,3 +239,52 @@ span {
 .section {
     padding: 100px 10%;
     text
+
+/* CONTACT FORM */
+.contact-form {
+    width: 100%;
+    max-width: 650px;
+    margin: 35px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    text-align: left;
+}
+
+.contact-form label {
+    color: #e2e8f0;
+    font-weight: 600;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #334155;
+    border-radius: 10px;
+    background: #111827;
+    color: #ffffff;
+    font: inherit;
+    outline: none;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #22d3ee;
+    box-shadow: 0 0 8px rgba(34, 211, 238, 0.15);
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: #94a3b8;
+}
+
+.contact-form textarea {
+    resize: vertical;
+    min-height: 130px;
+}
+
+.contact-form button {
+    cursor: pointer;
+    align-self: flex-start;
+}
