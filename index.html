@@ -2,282 +2,208 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <meta name="description" content="Shreya B Gowda - AI and Machine Learning Engineering Student Portfolio">
-    <meta name="keywords" content="Shreya Gowda, AIML, Python, Machine Learning, Portfolio">
-    <meta name="author" content="Shreya B Gowda">
-
-    <title>Shreya B Gowda | AI & ML Portfolio</title>
-
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Shreya B Gowda — AI and Machine Learning student, building creative technology projects and learning through code.">
+  <meta name="theme-color" content="#f7f5f0">
+  <title>Shreya B Gowda | Creative AI Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+  <div class="page-glow glow-one"></div>
+  <div class="page-glow glow-two"></div>
 
-    <!-- NAVIGATION -->
-    <header class="header">
-        <a href="#home" class="logo">Shreya<span>.</span></a>
+  <header class="site-header">
+    <nav class="nav container">
+      <a class="brand" href="#home">shreya<span>.</span></a>
 
-        <nav class="navbar">
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#skills">Skills</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </header>
+      <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">
+        <span></span><span></span>
+      </button>
 
-    <!-- HOME -->
-    <section class="home" id="home">
-        <div class="home-content">
-            <p class="intro">HELLO, WELCOME TO MY PORTFOLIO</p>
+      <div class="nav-links" id="navLinks">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#contact" class="nav-link nav-contact">Let's talk <span>↗</span></a>
+      </div>
+    </nav>
+  </header>
 
-            <h1>Hello, I'm <span>Shreya</span> 👋</h1>
-
-            <h2>Aspiring AI & Machine Learning Engineer</h2>
-
-            <p class="description">
-                I am an Artificial Intelligence and Machine Learning
-                engineering student passionate about technology,
-                programming and innovation. I enjoy building practical
-                projects, exploring new technologies and continuously
-                improving my technical skills.
-            </p>
-
-            <div class="home-buttons">
-                <a href="#projects" class="btn">Explore My Work</a>
-                <a href="#contact" class="btn btn-outline">Contact Me</a>
-            </div>
+  <main>
+    <section class="hero container" id="home">
+      <div class="hero-copy reveal">
+        <div class="eyebrow"><span class="status-dot"></span> OPEN TO LEARNING & OPPORTUNITIES</div>
+        <p class="hero-kicker">HELLO, I'M SHREYA 👋</p>
+        <h1>Curious mind.<br><span class="gradient-text">Creative code.</span><br>Meaningful impact.</h1>
+        <p class="hero-description">
+          I'm an AI & Machine Learning engineering student who loves exploring technology,
+          building useful projects and turning ideas into reality.
+        </p>
+        <div class="hero-actions">
+          <a href="#projects" class="button button-dark">Explore my work <span>↗</span></a>
+          <a href="#contact" class="text-link">Let's connect <span>→</span></a>
         </div>
-
-        <div class="home-card">
-            <div class="profile-circle">SG</div>
-            <h2>Shreya B Gowda</h2>
-            <p>AI & Machine Learning Student</p>
-            <div class="profile-line"></div>
-            <p class="profile-note">Learning • Building • Growing</p>
+        <div class="hero-socials">
+          <a href="https://github.com/shreyagowda07" target="_blank" rel="noopener noreferrer">GITHUB ↗</a>
+          <span></span>
+          <a href="mailto:shreyashreyagowda990@gmail.com">EMAIL ↗</a>
         </div>
+      </div>
+
+      <div class="hero-art reveal">
+        <div class="art-orbit orbit-a"></div>
+        <div class="art-orbit orbit-b"></div>
+        <div class="art-sticker sticker-top">BUILDING<br>THE FUTURE ✳</div>
+        <div class="profile-tile">
+          <div class="profile-topline"><span>PORTFOLIO / 2026</span><span>01 — 05</span></div>
+          <div class="profile-monogram">S<span>G</span></div>
+          <div class="profile-bottom">
+            <div><strong>Shreya B Gowda</strong><small>AI & ML STUDENT</small></div>
+            <div class="profile-arrow">↗</div>
+          </div>
+        </div>
+        <div class="art-sticker sticker-bottom">IDEAS INTO<br>IMPACT ✦</div>
+        <div class="floating-star star-one">✳</div>
+        <div class="floating-star star-two">✦</div>
+      </div>
     </section>
 
-    <!-- ABOUT -->
-    <section class="section" id="about">
-        <p class="section-label">GET TO KNOW ME</p>
-        <h2 class="section-title">About <span>Me</span></h2>
+    <div class="marquee" aria-label="Learning, building, creating">
+      <div class="marquee-track">
+        <span>LEARN</span><b>✳</b><span>BUILD</span><b>✳</b><span>CREATE</span><b>✳</b><span>INNOVATE</span><b>✳</b>
+        <span>LEARN</span><b>✳</b><span>BUILD</span><b>✳</b><span>CREATE</span><b>✳</b><span>INNOVATE</span><b>✳</b>
+      </div>
+    </div>
 
-        <div class="about-content">
-            <p>
-                I am an Artificial Intelligence and Machine Learning
-                engineering student interested in programming,
-                artificial intelligence and problem-solving.
-            </p>
-
-            <p>
-                I enjoy learning new technologies and building
-                projects that help me improve my technical skills.
-                I believe in continuous learning and developing
-                practical solutions through technology.
-            </p>
+    <section class="section container about-section" id="about">
+      <div class="section-heading reveal">
+        <span class="section-index">01 / ABOUT</span>
+        <h2>A little about <span class="serif-accent">me.</span></h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-note reveal">
+          <span class="note-icon">✳</span>
+          <p class="note-title">Always curious.<br>Always creating.</p>
+          <span class="note-caption">AIML ENGINEERING STUDENT</span>
         </div>
+        <div class="about-copy reveal">
+          <p class="large-copy">I believe technology becomes powerful when it solves real problems.</p>
+          <p>I'm pursuing Artificial Intelligence and Machine Learning engineering. I enjoy learning programming, exploring AI concepts and creating projects that help me grow as a developer.</p>
+          <p>Every project is a chance to experiment, make mistakes, learn something new and build something better.</p>
+          <a class="underlined-link" href="#contact">Get to know me <span>↗</span></a>
+        </div>
+      </div>
     </section>
 
-    <!-- SKILLS -->
     <section class="section skills-section" id="skills">
-        <p class="section-label">WHAT I AM LEARNING</p>
-        <h2 class="section-title">My <span>Skills</span></h2>
-
-        <div class="skills-container">
-            <div class="skill-card">
-                <span class="skill-number">01</span>
-                <h3>Python</h3>
-                <p>Programming fundamentals</p>
-            </div>
-
-            <div class="skill-card">
-                <span class="skill-number">02</span>
-                <h3>HTML</h3>
-                <p>Web page structure</p>
-            </div>
-
-            <div class="skill-card">
-                <span class="skill-number">03</span>
-                <h3>CSS</h3>
-                <p>Web design and styling</p>
-            </div>
-
-            <div class="skill-card">
-                <span class="skill-number">04</span>
-                <h3>JavaScript</h3>
-                <p>Interactive web development</p>
-            </div>
-
-            <div class="skill-card">
-                <span class="skill-number">05</span>
-                <h3>Machine Learning</h3>
-                <p>Model building and evaluation</p>
-            </div>
-
-            <div class="skill-card">
-                <span class="skill-number">06</span>
-                <h3>Git & GitHub</h3>
-                <p>Version control and collaboration</p>
-            </div>
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="section-index">02 / TOOLKIT</span>
+          <h2>Things I'm <span class="serif-accent">learning.</span></h2>
+          <p class="section-intro">A growing toolkit for turning curiosity into working projects.</p>
         </div>
+        <div class="skills-grid">
+          <div class="skill-card reveal"><span class="skill-number">01</span><span class="skill-symbol">Py</span><h3>Python</h3><p>Programming fundamentals</p></div>
+          <div class="skill-card reveal"><span class="skill-number">02</span><span class="skill-symbol">⌘</span><h3>HTML & CSS</h3><p>Web structure and styling</p></div>
+          <div class="skill-card reveal"><span class="skill-number">03</span><span class="skill-symbol">JS</span><h3>JavaScript</h3><p>Interactive web experiences</p></div>
+          <div class="skill-card reveal"><span class="skill-number">04</span><span class="skill-symbol">AI</span><h3>Machine Learning</h3><p>Models and experimentation</p></div>
+          <div class="skill-card reveal"><span class="skill-number">05</span><span class="skill-symbol">Git</span><h3>Git & GitHub</h3><p>Version control and collaboration</p></div>
+        </div>
+      </div>
     </section>
 
-    <!-- PROJECTS -->
-    <section class="section projects-section" id="projects">
-        <p class="section-label">WHAT I HAVE BEEN BUILDING</p>
-        <h2 class="section-title">My <span>Projects</span></h2>
+    <section class="section container projects-section" id="projects">
+      <div class="section-heading reveal">
+        <span class="section-index">03 / SELECTED WORK</span>
+        <h2>Ideas I've <span class="serif-accent">worked on.</span></h2>
+        <p class="section-intro">A few projects from my learning and building journey.</p>
+      </div>
 
-        <div class="projects-container">
+      <div class="projects-grid">
+        <article class="project-card project-featured reveal">
+          <div class="project-visual visual-green">
+            <span class="visual-label">AI / AGRICULTURE</span>
+            <div class="crop-art"><span>✳</span><span>✿</span><span>❋</span></div>
+            <span class="visual-number">01</span>
+          </div>
+          <div class="project-info">
+            <div class="project-meta"><span>01 — MACHINE LEARNING</span><span>2026</span></div>
+            <h3>AgriPredict AI</h3>
+            <p>An agriculture-focused AI project exploring crop prediction and plant disease detection.</p>
+            <a href="https://github.com/shreyagowda07/AgriPredict-AI" target="_blank" rel="noopener noreferrer" class="project-link">View project <span>↗</span></a>
+          </div>
+        </article>
 
-            <article class="project-card">
-                <span class="project-number">PROJECT 01</span>
-                <h3>AgriPredict AI</h3>
-                <p>
-                    An agriculture-focused AI project that explores
-                    crop prediction and plant disease detection using
-                    machine learning and deep learning techniques.
-                </p>
-                <div class="project-tags">
-                    <span>Python</span>
-                    <span>Machine Learning</span>
-                    <span>TensorFlow</span>
-                </div>
-                <a href="https://github.com/shreyagowda07/AgriPredict-AI"
-                   target="_blank" rel="noopener noreferrer"
-                   class="project-link">View on GitHub ↗</a>
-            </article>
+        <article class="project-card reveal">
+          <div class="project-visual visual-orange">
+            <span class="visual-label">AI / SOCIAL IMPACT</span>
+            <div class="orbit-art"><span>✦</span><i></i><b></b></div>
+            <span class="visual-number">02</span>
+          </div>
+          <div class="project-info">
+            <div class="project-meta"><span>02 — TEAM PROJECT</span><span>2026</span></div>
+            <h3>Jeevika AI</h3>
+            <p>A team project focused on livelihood recommendations and skill development.</p>
+            <a href="https://github.com/Adarsha-o-O/jeevika-ai" target="_blank" rel="noopener noreferrer" class="project-link">View project <span>↗</span></a>
+          </div>
+        </article>
 
-            <article class="project-card">
-                <span class="project-number">PROJECT 02</span>
-                <h3>Jeevika AI</h3>
-                <p>
-                    An AI-powered platform designed to provide
-                    livelihood recommendations, identify skill gaps
-                    and guide users towards skill development
-                    opportunities.
-                </p>
-                <div class="project-tags">
-                    <span>Artificial Intelligence</span>
-                    <span>FastAPI</span>
-                    <span>Web Development</span>
-                </div>
-                <a href="https://github.com/Adarsha-o-O/jeevika-ai"
-                   target="_blank" rel="noopener noreferrer"
-                   class="project-link">View on GitHub ↗</a>
-            </article>
-
-            <article class="project-card">
-                <span class="project-number">PROJECT 03</span>
-                <h3>AI Personal Knowledge Brain</h3>
-                <p>
-                    A personal knowledge management application
-                    designed to help organize documents and make
-                    information easier to store and retrieve.
-                </p>
-                <div class="project-tags">
-                    <span>Python</span>
-                    <span>FastAPI</span>
-                    <span>AI</span>
-                </div>
-                <span class="project-link">Currently Developing</span>
-            </article>
-
-        </div>
+        <article class="project-card project-wide reveal">
+          <div class="project-visual visual-lilac">
+            <span class="visual-label">AI / PERSONAL PRODUCTIVITY</span>
+            <div class="brain-art"><span>✧</span><span>◉</span><span>✧</span></div>
+            <span class="visual-number">03</span>
+          </div>
+          <div class="project-info">
+            <div class="project-meta"><span>03 — PERSONAL PROJECT</span><span>IN DEVELOPMENT</span></div>
+            <h3>AI Personal Knowledge Brain</h3>
+            <p>A personal knowledge management application built around organizing and accessing information with AI-powered features.</p>
+            <span class="project-status">Currently building <span class="status-dot"></span></span>
+          </div>
+        </article>
+      </div>
     </section>
 
-    <!-- CONTACT -->
-    <section class="section contact-section" id="contact">
+    <section class="contact-section" id="contact">
+      <div class="container contact-grid">
+        <div class="contact-copy reveal">
+          <span class="section-index">04 / SAY HELLO</span>
+          <h2>Have an idea?<br><span class="serif-accent">Let's talk.</span></h2>
+          <p>Have a project, an opportunity or just want to connect? Send me a message. I'd love to hear from you.</p>
+          <a class="contact-email" href="mailto:shreyashreyagowda990@gmail.com">shreyashreyagowda990@gmail.com <span>↗</span></a>
+          <div class="contact-socials">
+            <a href="https://github.com/shreyagowda07" target="_blank" rel="noopener noreferrer">GITHUB ↗</a>
+            <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">LINKEDIN ↗</a>
+          </div>
+        </div>
 
-        <p class="section-label">LET'S CONNECT</p>
-        <h2 class="section-title">Contact <span>Me</span></h2>
-
-        <p class="contact-description">
-            I'm always interested in learning, collaborating
-            and exploring new opportunities. Feel free to connect!
-        </p>
-
-        <!-- CONTACT FORM -->
-        <form class="contact-form"
-              action="https://formspree.io/f/xdeejqlq"
-              method="POST">
-
-            <input type="hidden" name="_subject"
-                   value="New message from Shreya's Portfolio">
-
-            <label for="name">Your Name</label>
-            <input
-                type="text"
-                id="name"
-                name="name"
-                placeholder="Enter your name"
-                required
-            >
-
-            <label for="email">Your Email</label>
-            <input
-                type="email"
-                id="email"
-                name="email"
-                placeholder="Enter your email"
-                required
-            >
-
-            <label for="message">Your Message</label>
-            <textarea
-                id="message"
-                name="message"
-                rows="5"
-                placeholder="Write your message here..."
-                required
-            ></textarea>
-
-            <button type="submit" class="btn">
-                Send Message
-            </button>
-
+        <form class="contact-form reveal" action="https://formspree.io/f/xdeejqlq" method="POST">
+          <input type="hidden" name="_subject" value="New message from Shreya's Portfolio">
+          <label for="name">YOUR NAME</label>
+          <input type="text" id="name" name="name" placeholder="What should I call you?" required>
+          <label for="email">YOUR EMAIL</label>
+          <input type="email" id="email" name="email" placeholder="Where can I reach you?" required>
+          <label for="message">YOUR MESSAGE</label>
+          <textarea id="message" name="message" rows="4" placeholder="Tell me what's on your mind..." required></textarea>
+          <button type="submit" class="button button-dark form-button">Send message <span>↗</span></button>
         </form>
-
-        <!-- SOCIAL LINKS -->
-        <div class="contact-links">
-
-            <a href="mailto:shreyashreyagowda990@gmail.com"
-               class="btn btn-outline">
-                Email Me
-            </a>
-
-            <a href="https://github.com/shreyagowda07"
-               target="_blank"
-               rel="noopener noreferrer"
-               class="btn btn-outline">
-                GitHub
-            </a>
-
-            <a href="https://www.linkedin.com/"
-               target="_blank"
-               rel="noopener noreferrer"
-               class="btn btn-outline">
-                LinkedIn
-            </a>
-
-        </div>
-
+      </div>
     </section>
+  </main>
 
-    <!-- FOOTER -->
-    <footer class="footer">
-        <p>
-            © <span id="year"></span> Shreya B Gowda.
-            All Rights Reserved.
-        </p>
+  <footer class="footer">
+    <div class="container footer-inner">
+      <a class="brand" href="#home">shreya<span>.</span></a>
+      <p>Designed with curiosity & built with code.</p>
+      <span>© <span id="year"></span> SHREYA B GOWDA</span>
+    </div>
+  </footer>
 
-        <a href="#home">Back to Top ↑</a>
-    </footer>
-
-    <script src="script.js"></script>
-
+  <script src="script.js"></script>
 </body>
 </html>
